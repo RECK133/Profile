@@ -143,20 +143,21 @@ footer {
 /* SP */
 @media screen and (max-width: 600px) {
     #mainvisual img {
-        height: calc(100vh - 60px);
+        height: calc(100vh - 260px);
     }
 
     #about .content {
         flex-direction: column;
     }
     #about img {
+        margin-top: 10px;
         margin-right: 0;
     }
 
     #map ul {
         flex-direction: column;
     }
-    #mal li {
+    #map li {
         width: 100%;
         margin-bottom: 30px;
     }
