@@ -1,0 +1,164 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 0.9rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto 100px auto;
+    padding: 0 4%;
+}
+
+.site-title {
+    width: 120px;
+    line-height: 1px;
+    padding: 1px 0; /*いらない？*/
+}
+
+.site-title a {
+    display: block;
+}
+
+.section-title {
+    /* background-color: aquamarine; */
+    display: inline;
+    font-size: 2rem;
+    border-bottom: solid 1px #000000;
+}
+
+.content-title {
+    /* background-color: blueviolet; */
+    /* font-size: 1rem; */ /* いらない？ */
+    margin: 10px 0; /* いらない？ */
+}
+
+/* ヘッダー */
+#header {
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+
+#header li {
+    margin-left: 30px;
+}
+
+#header li a {
+    color: #24292e;
+}
+
+#header li a:hover {
+    opacity: 0.7;
+}
+
+/* メインヴィジュアル */
+#mainvisual {
+    margin-bottom: 80px;
+}
+#mainvisual img{
+    text-align: center;
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    background-image: url("Resources/profile.png");
+}
+
+/* about */
+/* #main {
+    background-color: chartreuse;
+} */
+
+#about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about .text {
+    text-align: left;
+}
+
+/* map */
+/* #map .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#map img {
+    width: 32%;
+}
+
+#map li {
+    margin: 0 10px;
+} */
+
+#map ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#map li {
+    width: 32%;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 10px 0;
+}
+
+/* SP */
+@media screen and (max-width: 600px) {
+    #mainvisual img {
+        height: calc(100vh - 260px);
+    }
+
+    #about .content {
+        flex-direction: column;
+    }
+    #about img {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    #map ul {
+        flex-direction: column;
+    }
+    #map li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
